@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student ABC id</title>
+    <style>
+      .container {
+        display: inline-block;
+        cursor: pointer;
+      }
+      .bar1,
+      .bar2,
+      .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      .change .bar1 {
+        transform: translate(0, 11px) rotate(-45 deg);
+      }
+      .change .bar2 {
+        opacity: 0;
+      }
+      .change .bar3 {
+        transform: translate(0, -11px) rotate(45 deg);
+      }
+      #button {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container" onclick="myFuction(this)"> -->
+    <!-- <div class="bar1"></div> -->
+    <!-- <div class="bar2"></div> -->
+    <!-- <div class="bar3"></div> -->
+
+    <!-- </div> -->
+    <h1>Sign up for Digilocker</h1>
+    <div>
+      <form action="form">
+        <div>
+          <!-- <label for="mnumber">Mobile Number:</label><br /> -->
+          <input
+            type="text"
+            id="mnumber"
+            placeholder="Mobile Number*"
+          /><br /><br />
+          <div><!-- <input type="number" placeholder="Mobile Number"> --></div>
+        </div>
+        <div><button type="button" onclick="alert">Generate OTP</button></div>
+        <br />
+        <div>
+          <label for="fname">First Name:</label><br />
+          <input type="text" id="fname" placeholder="Your Name" /><br /><br />
+        </div>
+        <div>
+          <label for="lname">Last Name:</label><br />
+          <input type="text" id="lname" placeholder="SirName" /><br /><br />
+        </div>
+        <div>
+          <label for="DOB">Date of birth </label>
+          <input type="date" />
+        </div>
+        <br /><br />
+        <div>
+          <select name="Gender" id="gender">
+            <option value="none">Select your Gender</option>
+            <option value="Male">Male</option>
+            <option value="female">Female</option>
+            <option value="Tansgender">Transgender</option>
+          </select>
+        </div>
+        <br /><br />
+        <div>
+          <input
+            type="text"
+            id="uid"
+            placeholder="creat username"
+          /><br /><br />
+        </div>
+        <div>
+          <input type="text" placeholder="pin" />
+        </div>
+        <br />
+        <div>
+          <input type="text" placeholder="confirm pin" />
+        </div>
+        <br />
+        <div>
+          <input type="checkbox" />
+          I consent to MeriPehchan
+          <a href="terms and con">terms and con </a>
+        </div>
+        <div>
+          <button type="button">Verify</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
